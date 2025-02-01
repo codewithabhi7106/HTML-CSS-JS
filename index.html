@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donor</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+ <div id="body">
+  <div id="header">
+    <a href="">Home</a>
+    <a href="">About me</a>
+    <button id="href"onclick="contact()">Contact</button>
+  </div>
+  <div id="main">
+    <div id="card">
+      <button onclick="buttonClick1 ()">I need blood</button>
+      <p>OR</p>
+      <button onclick="buttonClick2()">Register as donor</button>
+      <img
+        src="https://lh3.googleusercontent.com/fife/ALs6j_EnBhX2Brl8UW36eBmkKARtZlNA3rjR4uQn2U3_h7Lbhz7eOlXaG_mH0jMMD7LjLJ94FYFhejugyYUtc_Qx0bl1-OKdPUu2kFEljP2OiCg3Y7Ssp640_ImYoOdWSzk-r04CqQL1kif5fqEJyXKDyAXncHJvCPPtzWeuyJ3IjFTkU3CWQCRZrhVrxh4oXqmeC6xs2lJr2MQSGekMbCmGPMnAqeuJh-WvUGDOGSSMlduKUljB9dIEFvCPrXCSVAVCWUnM4muB7WDD3ffez-0DYblNGpxdAdhXhMmvBf4krKqnHdeqdfN_Vvvte2jQSxx30j_iCr3HLuKP7MWxDSWpxE6QW9eWlEMNQbCkG_eJoiJj66rcWwGovAjDz6ExBjlyPsgC4sCBRI5bLsQliAoCamVdixeQhfhlcHr7lMMssRURUgZN33Qhf4PJzhqQPejH-C-We8sv9LR7p_DfZyHhjFKiI8VeCLqlghxg-4x6AuIFKQHyyBEBEyZN3fX6fz5WcWA5D9aMigq4xUm1yGqi0RtXH6H_KL-SSunAK_PSDeSbnyJQttyMv5QtH7jOGuST2OPGLAWewp34dqA3HuRYXeyPICcHQjCUC0wQ2YAF35cnJgfZRJHC07F2YrIO9chSgROWZ3sLJFwPqdBVdrwMQftY8S-8Du2Oe2OD_L2zelIvaXb7w-Hj30iwxnbu7WirCUlhioMp64xl_TkJcfgWnHai5R4fIE5DOiSlHw-EfQjaV9GVuATIWFR_w3tx4Adu5xk9nzHVkuPakHtHNJ9OPkbikCYLIXiUSKHCekyrxN1cxo7mifUnQajPaVoTEyWhznHVd6C8ZlsC03QR8H0zaLffivGsHvkcym6gtA0qq8XdKyRgck1eDqEKkVKxjK9c_Bu_CMN7SfuJRLE-QCpOaKi7ErIt6mR4_AvluW7_-D_3vFlUfwTrqCEjH3Eu56G9RXK7FsFvaWITmJFy8OiDYUdxSpxFrI5dtXpE0t2aapybTNrWLXDGKjhpNkEIsn3U3jPKZw-Aal_Lo9IlRYg4JfufET3ugh5fQ30ZuRl32dAvANUizN-1IDiAmsLxu6nhzfTbaP1NjHtrRrjD8clY9Q53GzJ2wdSlvckDy2SbNz6W66e4Kxn2BbM5GhgIdKCtU-cfU8jdTZ4vLHDjfRJvvTZAXtvzfUPKuHT7BLEOX0iqq79GfCRXa7H7IEYaTSU0_UzZIc5Y4xMVfe5hVDO4YDboAYBWd4IgvQXDkgYYSYgldX7rnQMx1YQefHeOLQ9Y-1sy9DPXTXOb_E35zFULuGQwGNe9LDZeManOuhzKCJhJbc5axqR8BUE4lZduBwQ_i1ip6E6M4hqIHbfknc66NNRR59bgIo0mDzTjVY6pxOdEbGGJB9m7As2ij4ka2zjkhae5ljfO13noW71HE4_g0Ts8bdxvJnfmusdkFjemOCBjhP_0CCCba4Uzty42jcbmny4CC1c_ijEG2zumWH5dCe1fonG4tDR1FJB5xckeSKXK8jtFCoLtDZeLzIhCgGt7LkD7gzn6TBgGrSUFr1ZMQ8Lgg41rSD1_9RhPid2XXBTdgL83aIYcv1FTcI1KHdP7sdrzt6_D6ZmIuvNUUdm3y1xT0BNpM_sYjYYLpmULTMFcQw4u=w348-h260-p-k-nu"
+      />
+    </div>
+    <div id="adress">
+      <form>
+        <label>Name</label>
+        <input type="text" id="nam" />
+        <label>Select District</label>
+        <select id="dis">
+          <option selected disabled >District</option>
+          <option>Dewas</option>
+          <option>Indor</option>
+          <option>Ujjain</option>
+          <option>Dhar</option>
+          <option>Mandsour</option>
+        </select>
+
+        <label>Select Blood Group</label>
+        <select id="bld">
+          <option selected disabled>Any group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+        <label>Enter Pincode</label>
+        <input type="number" id="pin"required />
+        <button type="button" onclick="find()">Find</button>
+      </form>
+    </div>
+    <div id="adress2">
+      <form >
+        <label>Select District</label>
+        <input type="" id="a" />
+        <label>Select Blood Group</label>
+        <select id="b">
+          <option selected disabled>Any group</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O+</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+
+        <label>Name</label>
+        <input type="text" id="c" />
+        <label>Contact Number</label>
+        <input type="number" id="d" />
+        <label>WhatsApp Number </label>
+        <input type="number" id="e" />
+        <label>Enter Pincode</label>
+        <input type="number" id="f" />
+
+        <button type="button"onclick="data()">Register Me</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="form">
+  <div id="header">
+    <a href="">Home</a>
+    <button id="href"onclick="showneed()">Need Blood</button>
+    <button id="href"onclick="contact()">Contact</button>
+  </div>
+   <button class="back"onclick="backButton()">↩</button>
+  <div class="details">
+    <div>
+      <p class="name1"></p>
+      <p>Last donated:1july 2024</p>
+    </div>
+    <a href="tel:+917300970666">
+     <img class="img"src="https://img.icons8.com/?size=100&id=ufkkYBXJSuPy&format=png&color=000000" />
+    </a>
+    <a href="https://wa.me/9173009 70666">
+     <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" />
+    </a>
+  </div>
+  <div class="details">
+    <div>
+      <p class="name2"></p>
+      <p>Last donated:1july 2024</p>
+    </div>
+   <a href="tel:+917300970666">
+     <img class="img"src="https://img.icons8.com/?size=100&id=ufkkYBXJSuPy&format=png&color=000000" />
+    </a>
+    <a href="https://wa.me/9173009 70666">
+     <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" />
+    </a>
+  </div>
+  <div class="details">
+    <div>
+      <p class="name3"></p>
+      <p>Last donated:1july 2024</p>
+    </div>
+    <a href="tel:+9173009 70666">
+     <img class="img"src="https://img.icons8.com/?size=100&id=ufkkYBXJSuPy&format=png&color=000000" />
+    </a>
+    <a href="https://wa.me/9173009 70666">
+     <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" />
+    </a>
+  </div>
+  <div class="details">
+    <div>
+      <p class="name4"></p>
+      <p>Last donated:1july 2024</p>
+    </div>
+    <a href="tel:+9173009 70666">
+      <img class="img"src="https://img.icons8.com/?size=100&id=ufkkYBXJSuPy&format=png&color=000000" />
+    </a>
+    <a href="https://wa.me/9173009 70666">
+      <img src="https://img.icons8.com/?size=100&id=QkXeKixybttw&format=png&color=000000" />
+    </a>
+  </div>
+</div>
+
+<div id="contact">
+  <h1 id ="h1">CodeYogi</h1>
+  <button class="back"onclick="backButton()">↩</button>
+  <center>
+  <h2 id="heading"></h2>
+  </center>
+  <form method action="https://codeyogi.io/save">
+    <label for="namCon">Your Name</label>
+        <input type="text"id="namCon" name="name"
+        placeholder="Enter your name?"required/> 
+        <label for="email">Your Email</label>
+        <input type="email" id="email"name="email"
+        placeholder="Enter your email?"required/>
+    <label for="password">Password</label>
+        <input type="password"id="password" name="password"
+        placeholder="Enter your password?"required/>
+    <hr color="black">
+    
+    <button class="conbtn"onclick="showconBtn()">Contact Us</button>
+  </form>
+     <div id="footer">
+    <div class="contact">
+     <h2>Contact Us
+       <hr color="black"></hr>
+     </h2> 
+     <div>
+      <h4>WhatsApp(massage only)</h4>
+      <h4>+917300 970 666</h4>
+     </div>
+     <div>
+       <h4>E-mail</h4>
+       <h4>hello@codeyogi.io</h4>
+     </div>
+    </div>
+    <center>
+   <h3>Connect with us</h3>
+   <div class="imgdiv">
+     <a href="tel:+917300 970 666">
+      <img src="https://img.icons8.com/?size=48&id=85059&format=png">
+     </a>
+     <a href="https://wa.me/917300 970 666">
+      <img src="https://img.icons8.com/?size=48&id=85088&format=png">
+     </a>
+     <a href="https://youtube.com/@codeyogi?si=g-E6aLeAKVCciAg7?sub_confirmation=1">
+      <img src="https://img.icons8.com/?size=100&id=37326&format=png"/>
+     
+     <a href="https://ig.me/m/thecodeyogi">
+      <img src="https://img.icons8.com/?size=48&id=85154&format=png">
+     </a>
+   </div>
+  
+</div>
+</div>
+ <script src="index.js"></script>
+</body>
+
+</html>

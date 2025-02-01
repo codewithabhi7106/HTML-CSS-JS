@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+#header {
+  background: red;
+  height: 80px;
+}
+#body{
+  min-height:100vh;
+  background-image: url("https://lh3.google.com/u/0/d/1Ydqkfwo3v21vwpsbsZGsMCXqCLVMiMRX=w348-h260-p-k-nu-iv1 ");
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  color: white;
+  margin-left: 20px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+#card button {
+  background: red;
+  color: white;
+  margin: 30px;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 5px 5px 15px black;
+}
+img {
+  filter: drop-shadow(2px 5px 10px black);
+}
+
+#adress,
+#adress2 {
+  background: lightgrey;
+  width: 80%;
+  margin: 50px 0px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px black;
+}
+form {
+  margin: 10px;
+}
+label {
+  display: block;
+  margin: 10px 0px;
+}
+input,
+select {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bebebe;
+}
+form button {
+  color: white;
+  width: 100%;
+  height: 50px;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  font-weigth: bold;
+  margin: 20px 0px;
+}
+#adress {
+  display: none;
+}
+#adress2 {
+  display: none;
+}
+.details {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  height: 20vh;
+  padding: 10px;
+  margin: 5%;
+  border-radius:5px;
+  box-shadow:2px 2px 10px black;
+  overflow: scroll;
+}
+.details img{
+  width:50px;
+  margin:5px;
+}
+.details p{
+  word-break: break-all;
+  overflow: scroll;
+}
+
+#form {
+  display:none;
+}
+#card p{
+  color:red;
+  font-size: 20px;
+  font-weight: bold;
+}
+#card img{
+  position: absolute;
+  bottom: 0;
+}
+#href{
+  color :white;
+  border: none;
+  background: red;
+  margin:10px;
+  font-size: 17px;
+  display: inline-block;
+}
+#contact form{
+  background: rgba(255,255,255,0.8);
+  box-shadow: 3px 3px 20px black;
+  padding:20px;
+  border-radius: 10px;
+
+}
+.conbtn{
+  background: black;
+  font-size: 20px;
+}
+#contact input {
+  background: rgba(0,0,0,0.1);
+  border:none;
+}#footer{
+   background:#f2b705;
+   box-shadow:-0px -0.5px 8px black;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+ #contact{
+   background-image: url(https://images.unsplash.com/photo-1472289065668-ce650ac443d2?q=80&w=869&auto=format&fit=crop&ixlib=rb-4..3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   position: relative;
+   height: 200vh;
+   padding: 10px;
+   display: none;
+
+ }
+ #footer img{
+   width: 30px;
+   margin:10px;
+
+ }
+ .contact{
+   background:rgba(0,0,0,0.1);
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   gap:20px;
+ }
+ .imgdiv{
+  display: flex;
+  justify-content: space-evenly;
+ }
+ #contact h1{
+   text-align: center;
+   font-size: 50px;
+   margin:40px 0px;
+ }
+ .back{
+   font-size: 20px;
+   color: white;
+   background: black;
+   border:1px solid white;
+   padding: 0px 10px;
+   font-weight: bold;
+   border-radius: 10px;
+   margin: 10px;
+   position: fixed;
+   left: 0;
+   top: 0;
+ }
+ @media (orientation: landscape),(min-width:641px) {
+   #header{
+     padding: 100px 10px;
+   }
+  #card button{
+     font-size: 70px;
+     padding: 40px;
+     width:800px;
+   }
+   #header a,#header button{
+     font-size: 50px;
+     margin: 20px;
+   }
+   #card p{
+     font-size: 50px;
+   }
+    img{
+     width: 100%;
+   }
+  input,select {
+    height: 80px;
+    font-size: 30px;
+   }
+   label{
+     font-size: 40px;
+   }
+   form button,#con{
+     height: 100px;
+     font-size: 50px;
+   }
+   #footer img{
+     width:100px;
+     margin: 20px;
+     filter: drop-shadow(0px 0px 0px #000);
+   }
+   #footer h3 ,h2{
+     font-size: 50px;
+   }
+   h4{
+     font-size: 40px;
+     margin: 20px;
+   }
+   .conbtn{font-size: 40px;}
+   .details p{
+     font-size: 40px;
+     margin: 10px;
+   }
+   .details img{
+     width: 150px;
+   }
+   .back{font-size: 50px;}
+
+ }
